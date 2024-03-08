@@ -1,15 +1,19 @@
 import "./App.css";
 import Profile from "./components/Profile";
+import userData from "./userData.json";
 
-function App() {
+const App = () => {
   return (
-    <div className="app-container">
-      <h1>Vite + React is amazing</h1>
-      <p>Click on the Vite and React logos to learn more</p>
-
-      <Profile />
-    </div>
+    <>
+      <Profile
+        name={userData.username}
+        tag={userData.tag}
+        location={userData.location}
+        image={userData.avatar}
+        stats={userData.stats}
+      />
+    </>
   );
-}
+};
 
 export default App;
