@@ -1,8 +1,7 @@
 import clsx from "clsx";
 import css from "./FriendListItem.module.css";
-import FriendListItem from "./components/FriendListItem/FriendListItem";
 
-const FriendListItem = ({}) => {
+const FriendListItem = ({ avatar, name, isOnline }) => {
   return (
     <div>
       <img src={avatar} alt="Avatar" width="48" />
